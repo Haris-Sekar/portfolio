@@ -262,3 +262,19 @@
   });
 
 })()
+
+const age = document.getElementById("myAge");
+
+var dob = new Date("08/06/2002");  
+var monthDiff = Date.now() - dob.getTime();  
+var ageDt = new Date(monthDiff);   
+var year = ageDt.getUTCFullYear();  
+var finalAge = Math.abs(year - 1970);  
+
+age.innerHTML = finalAge;
+
+const myResume = document.getElementById("myResume");
+
+myResume.addEventListener('click',(event)=>{
+  window.open("https://drive.google.com/file/d/1vHFz6Lwi4rp54eUhbmVUSvzg0db41je_/view","_blank")
+})

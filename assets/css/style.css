@@ -101,6 +101,11 @@ h1, h2, h3, h4, h5, h6 {
 # Disable aos animation delay on mobile devices
 --------------------------------------------------------------*/
 @media screen and (max-width: 768px) {
+  .resumeBtn{
+    width: 10%;
+    font-size: 15px;
+    padding: 5px 10px;
+  }
   [data-aos-delay] {
     transition-delay: 0 !important;
   }
@@ -965,15 +970,16 @@ section {
 .contact .php-email-form textarea {
   padding: 10px 12px;
 }
-.contact .php-email-form button[type=submit] {
+.resumeBtn {
   background: #0563bb;
   border: 0;
   padding: 10px 35px;
   color: #fff;
-  transition: 0.4s;
-  border-radius: 50px;
+  transition:all 0.4s ease-in-out;
+  border-radius: 10px;
+  width: 10%;
 }
-.contact .php-email-form button[type=submit]:hover {
+.resumeBtn:hover {
   background: #0678e3;
 }
 @-webkit-keyframes animate-loading {
@@ -1050,4 +1056,17 @@ section {
   width: 300px;
   height: 100px;
   margin: 2%;
+}
+.companyLogo #navtiveGuru{
+  width: 200px;
+  height: 200px;
+  margin: 2%;
+}
+
+@media screen and (max-width: 768px) {
+  .resumeBtn{
+    width: 20%;
+    font-size: 15px;
+    padding: 5px 10px;
+  }
 }
